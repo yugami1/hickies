@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf8">
+	<title>Shingima register</title>
+</head>
+<body>
+	<header style="background:pink;">
+		<h1 style="color:white">shinjima.com</h1>
+		<nav style="color:white;">
+			<a href="register.html">新規登録</a>
+			<a href="login.html">ログイン</a>
+			<a href="bite.html">バイト募集</a>
+			<a href="top.html">ホームへ</a>
+		</nav>
+	</header>
+
+	<article>
+		<h1>バイト情報記入欄</h1>
+		<p>カテゴリ
+			<select name="category">
+				<option value="hikennsya">被験者</option>
+				<option value="seikyou">生協</option>
+				<option value="pc">PC(情報系)</option>
+			</select>
+		</p>
+		<p>募集対象(条件):<textarea name="comment"cols="40" rows="3" >全学生</textarea>
+		</p>
+		<p>実施場所
+			<input type="checkbox" checked><label for="kyotanabe">京田辺</label>
+			<input type="checkbox" name="school" value="imadegawa" id="imadegawa"><label for="imadegawa">今出川</label>
+		</p>
+<!--院生の時間割に変更する必要あり-->
+		<table>
+			<p>実施期間</p>
+				<thead>
+					<tr>
+						<th>時間/曜日</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>9:00~10:30</td><td><input type="checkbox" name="zissi" value="getu1"checked id="getu1"></td><td><input type="checkbox" name="zissi" value="ka1"checked id="ka1"></td><td><input type="checkbox" name="zissi" value="sui1"checked id="sui1"></td><td><input type="checkbox" name="zissi" value="moku1"checked id="moku1"></td><td><input type="checkbox" name="zissi" value="kinn1"checked id="kinn1"></td><td><input type="checkbox" name="zissi" value="do1" checked id="do1"></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>10:45~12:15</td><td><input type="checkbox" name="zissi" value="getu2"checked id="getu2"></td><td><input type="checkbox" name="zissi" value="ka2"checked id="ka2"></td><td><input type="checkbox" name="zissi" value="sui2"checked id="sui2"></td><td><input type="checkbox" name="zissi" value="moku2"checked id="moku2"></td><td><input type="checkbox" name="zissi" value="kinn2"checked id="kinn2"></td><td><input type="checkbox" name="zissi" value="do2" checked id="do2"></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>13:10~14:40</td><td><input type="checkbox" name="zissi" value="getu3"checked id="getu3"></td><td><input type="checkbox" name="zissi" value="ka3"checked id="ka3"></td><td><input type="checkbox" name="zissi" value="sui3"checked id="sui3"></td><td><input type="checkbox" name="zissi" value="moku3"checked id="moku3"></td><td><input type="checkbox" name="zissi" value="kinn3"checked id="kinn3"></td><td><input type="checkbox" name="zissi" value="do3" checked id="do3"></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>14:55~16:25</td><td><input type="checkbox" name="zissi" value="getu4"checked id="getu4"></td><td><input type="checkbox" name="zissi" value="ka4"checked id="ka4"></td><td><input type="checkbox" name="zissi" value="sui4"checked id="sui4"></td><td><input type="checkbox" name="zissi" value="moku4"checked id="moku4"></td><td><input type="checkbox" name="zissi" value="kinn4"checked id="kinn4"></td><td><input type="checkbox" name="zissi" value="do4" checked id="do4"></td>
+					</tr>
+				</tbody>
+				<tbody>
+					<tr>
+						<td>16:40~18:10</td><td><input type="checkbox" name="zissi" value="getu5"checked id="getu5"></td><td><input type="checkbox" name="zissi" value="ka5"checked id="ka5"></td><td><input type="checkbox" name="zissi" value="sui5"checked id="sui5"></td><td><input type="checkbox" name="zissi" value="moku5"checked id="moku5"></td><td><input type="checkbox" name="zissi" value="kinn5"checked id="kinn5"></td><td><input type="checkbox" name="zissi" value="do5" checked id="do5"></td>
+					</tr>
+				</tbody>
+		</table>
+<!--締切部分はカレンダーが双方にとって楽だとは思う-->
+		<p>締切:<textarea name="simekiri"cols="10" rows="1" placeholder="例)1月1日"></textarea>
+		</p>
+		<!--新たに設定しなくてはならない-->
+		<p><input type="submit" value="送信！"></p>
+	</article>
+	<footer>
+		<a href="register.html" target="_blank">新規登録</a>
+		<a href="login.html" target="_blank">ログイン</a>
+		<a href="bite.html" target="_blank">バイト募集</a>
+		<a href="top.html">ホームへ</a>
+		<p>&copy;Copyright Shinjima.com all rights reserved.</p>
+	</footer>
+</body>
+</html>
